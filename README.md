@@ -8,13 +8,13 @@ The .txt file provides quite a tedious and non-user friendly way to look at your
 * Angular 5
 * Node.js
 
-## How to use
-Simply upload that chat backup created by Whatsapp ( .txt format ) and click upload. Depending on how big the backup file is, the output will be seen in the two simulator, user 1's and user 2's screen.
-
-## Contribute
-You can contribute to this project by simply forking the repository. I've already included the node modules in order to work on a stable set of environment.
+## How to use/Contribute
+You can contribute to this project by simply forking/pull request the repository.
+* **npm install** - install dependencies
 * **node server** - start the project (both frontend and backend).
 * **ng serve** - to start only the angular server of the project.
+After running **node server** open up your browser and shoot up https://localhost:3000.
+Simply upload the chat backup created by Whatsapp ( .txt format ) and click upload button. Depending on how big the backup file is, the output will be seen in the two simulator, user 1's and user 2's screen.
 
 ## Issues
 * For now it works for a two people conversation.
