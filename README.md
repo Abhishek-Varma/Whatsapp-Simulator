@@ -1,6 +1,9 @@
 # Whatsapp-Simulator
 This is a web application based on Angular 5 and Node.js. It reads your whatsapp backup file (in .txt format) and presents the text messages the way it would look like in your phone. Currently it works for a two people conversation.
 
+## Screenshot
+<img src="/screenshots/Screenshot_1.png" alt="Welcome screen" width="800">
+
 ## Why was the simulator created?
 The .txt file provides quite a tedious and non-user friendly way to look at your favorite conversation backup. This is where the beautification of the conversation as though it were real comes into the picture and Whatsapp Simulator comes to the rescue.
 
