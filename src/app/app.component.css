@@ -59,17 +59,17 @@
 	width: 5px;
 	background-color: transparent;
 }
-.messageScreen::-webkit-scrollbar-thumb {
+/*.messageScreen::-webkit-scrollbar-thumb {
 	background-color: transparent;
-}
-.messageScreen::-webkit-scrollbar-thumb:hover {
+}*/
+.messageScreen::-webkit-scrollbar-thumb {
 	background-color: #c0c0c0; /* grey color */
 }
 
 .receivedMessage {
 	background-color: #ffffff;
 	float: left;
-	padding-right: 36px !important;
+	padding-right: 36px;
 }
 
 .sentMessage {
@@ -201,4 +201,14 @@
 	display: inline-block;
 	padding: 12px 12px;
 	font-size: 22px;
+}
+
+/* media omitted */
+.media-omitted-div {
+	width: 200px;
+	height: 160px;
+}
+.no-image-style {
+	max-height: 100%;
+	max-width: 100%;
 }

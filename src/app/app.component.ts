@@ -16,9 +16,10 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     // Retrieve messages from the API
-    this.messageDataService.getMessages().subscribe(messages => {
+    /*this.messageDataService.getMessages().subscribe(messages => {
       this.messages = messages;
-    });
+    });*/
+    this.messages = [{ "date": "99/99/9999", "messages":[{"time":"22:14","name":"Rikku","messageString":"<Media omitted>\n","id":1},{"time":"22:14","name":"Rikku","messageString":"<Media omitted>\n","id":1},{"time":"22:16","name":"The Dark Knight","messageString":"Hahaha. ����.\n","id":2}]}];
   }
 
   upload() {

@@ -45,9 +45,10 @@
                 </div>
               </div> -->
               <div class="invisibleMessageDiv" *ngFor="let message of subMessage.messages" [class.firstMessage]="message.id==i+1 || message.id==((i+1)%2+1)">
-                <div class="message" [class.receivedMessage]="message.id==i+1 || message.id==-(i+1)" [class.sentMessage]="message.id==((i+1)%2+1) || message.id==-((i+1)%2+1)">
+                <div class="message" [class.receivedMessage]="message.id==i+1 || message.id==-(i+1)" [class.sentMessage]="message.id==((i+1)%2+1) || message.id==-((i+1)%2+1)" [class.media-omitted-div]="message.messageString=='<Media omitted>\n'">
                   <span class="messageTriangle" *ngIf="message.id>0" [class.receivedMessageTriangle]="message.id==i+1 || message.id==-(i+1)" [class.sentMessageTriangle]="message.id==((i+1)%2+1) || message.id==-((i+1)%2+1)"></span>
-                    {{message.messageString}}
+                  <p *ngIf="message.messageString!=='<Media omitted>\n'">{{message.messageString}}</p>
+                  <img src="../assets/no-image-available.jpg" *ngIf="message.messageString=='<Media omitted>\n'" class="no-image-style"/>
                   <span class="time" [class.receivedTime]="message.id==i+1 || message.id==-(i+1)">{{message.time}}</span>
                   <i class="fa fa-check checkMark checkMarkBlue" aria-hidden="true" *ngIf="message.id==((i+1)%2+1) || message.id==-((i+1)%2+1)"></i>
                   <!-- <i class="fa fa-clock-o checkMark" aria-hidden="true" *ngIf="message.id==((i+1)%2+1) || message.id==-((i+1)%2+1)"></i> -->
