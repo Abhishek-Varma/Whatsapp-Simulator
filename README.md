@@ -1,32 +1,3 @@
-<<<<<<< HEAD
-# WhatsappSimulator
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.2.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
 # Whatsapp-Simulator
 This is a web application based on Angular 5 and Node.js. It reads your whatsapp backup file (in .txt format) and presents the text messages the way it would look like in your phone. Currently it works for a two people conversation.
 
@@ -57,4 +28,3 @@ Simply upload the chat backup created by Whatsapp ( .txt format ) and click uplo
 ## Note
 * I've just started with this project and clearly there's a lot of restructuring of the project that needs to be done. The coding standards and styles will be taken care of in an iterative way.
 * More features to come!
->>>>>>> 1417991df4ca79b143edc71dc3e9d4b6c30d3c2c
