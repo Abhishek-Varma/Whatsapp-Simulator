@@ -1,1 +1,205 @@
 /* You can add global styles to this file, and also import other style files */
+.simulatorScreen {
+	background-image: url("assets/whatsapp-background-image.png");
+	padding: 0;
+	max-height: 640px;
+	border: 1px solid black;
+}
+
+.navbarBackground {
+	background-color: #075e55;
+}
+
+.navbarParentDiv {
+	position: relative;
+}
+
+.profilePic {
+	border-radius: 50%;
+	width: 46px;
+}
+
+.userName {
+	color: white;
+	padding-left: 14px;
+	padding-top: 8px;
+}
+
+.videoCamera {
+	right: 78px;
+	top: 12px;
+	position: absolute;
+}
+
+.phone {
+	right: 32px;
+	top: 12px;
+	position: absolute;
+}
+
+.options {
+	right: 0;
+	top: 12px;
+	position: absolute;
+}
+
+.whatsappFeatures {
+	color: white;
+	font-size: 22px;
+}
+
+.messageScreen {
+	height: 520px;
+	overflow: hidden;
+	min-height: 400px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.messageScreen::-webkit-scrollbar {
+	width: 5px;
+	background-color: transparent;
+}
+.messageScreen::-webkit-scrollbar-thumb {
+	background-color: transparent;
+}
+.messageScreen::-webkit-scrollbar-thumb:hover {
+	background-color: #c0c0c0; /* grey color */
+}
+
+.receivedMessage {
+	background-color: #ffffff;
+	float: left;
+	padding-right: 36px !important;
+}
+
+.sentMessage {
+	background-color: #e6fdcd;
+	float: right;
+}
+.firstMessage {
+	margin-top: 6px;
+}
+.message {
+	padding-left: 6px;
+	padding-right: 46px;
+	padding-bottom: 5px;
+	max-width: 320px;
+	text-align: left;
+	display: table-row;
+	border-radius: 5px;
+	box-shadow: 1px 1px;
+	margin-bottom: 2px;
+	position: relative;
+}
+
+.invisibleMessageDiv {
+	width: 100%;
+	display: table;
+}
+.messageTriangle {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+  	border-right: 10px solid transparent;
+	display: block;
+	position: absolute;
+}
+
+.receivedMessageTriangle {
+	border-top: 10px solid #ffffff;
+	margin-left: -14px;
+}
+
+.sentMessageTriangle {
+	border-top: 10px solid #e6fdcd;
+	right: -10px;
+}
+
+.time {
+	font-size: 10px;
+	font-weight: 600;
+	position: absolute;
+	bottom: 2px;
+	right: 17px;
+	color: #c0c0c0;
+}
+.receivedTime {
+	right: 8px !important;
+}
+.checkMark {
+	font-size: 10px;
+	position: absolute;
+	right: 6px;
+	bottom: 3px;
+	color: #c0c0c0;
+}
+
+.checkMarkSecond {
+	right: 2px !important;
+}
+
+.checkMarkBlue {
+	color: #3ac3e5 !important;
+}
+
+.footerRow {
+	padding: 6px 0;
+}
+
+.textAreaParentDiv {
+	background-color: white;
+	border-radius: 24px;
+	height: 42px;
+	position: relative;
+	margin-right: 10px;
+}
+
+.emoji {
+	position: absolute;
+	bottom: 6px;
+	left: 12px;
+	font-size: 22px;
+}
+.paperclip {
+	position: absolute;
+	bottom: 6px;
+	font-size: 22px;
+	right: 56px;
+}
+.camera {
+	position:  absolute;;
+	bottom: 6px;
+	font-size: 22px;
+	right: 20px;
+}
+
+.messageDiv {
+	background-color: white;
+	text-align: left;
+	width: 272px;
+	height: 42px;
+	max-width: 272px;
+	max-height: 100px;
+	padding-top: 6px;
+	margin-left: 48px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+.messageDiv::-webkit-scrollbar {
+	width: 5px;
+	background-color: transparent;
+}
+.messageDiv::-webkit-scrollbar-thumb {
+	background-color: #c0c0c0; /* grey color */
+}
+.sendButtonIcon {
+	background-color: #075e55;
+	height: 42px;
+	width: 42px;
+	float: right;
+	border-radius: 50%;
+	display: inline-block;
+	padding: 12px 12px;
+	font-size: 22px;
+}

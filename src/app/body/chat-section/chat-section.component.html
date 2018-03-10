@@ -1,0 +1,28 @@
+<div class="container text-center messageScreen">    
+    <div class="row">
+      <div class="col">
+        <div *ngFor="let subMessage of messages">
+          <div class="invisibleMessageDiv text-center" style="margin-bottom:10px;">
+            <div style="z-index:2;max-width:102px;border-radius:5px;box-shadow: 1px 1px;background-color:#e1f2fb;margin: 0 auto;text-align:center;color:#788a94;padding: 5px 12px 6px 12px;margin-top:6px;">
+              {{subMessage.date}}
+            </div>
+          </div>
+          <!-- <div class="invisibleMessageDiv">
+            <div class="no-image" style="width:200px;height:200px;background-color:red;">
+              <img src="../assets/no-image-available.jpg" style="max-height:100%;max-width:100%;" />
+            </div>
+          </div> -->
+          <div class="invisibleMessageDiv" *ngFor="let message of subMessage.messages" [class.firstMessage]="message.id==i+1 || message.id==((i+1)%2+1)">
+            <div class="message" [class.receivedMessage]="message.id==i+1 || message.id==-(i+1)" [class.sentMessage]="message.id==((i+1)%2+1) || message.id==-((i+1)%2+1)">
+              <span class="messageTriangle" *ngIf="message.id>0" [class.receivedMessageTriangle]="message.id==i+1 || message.id==-(i+1)" [class.sentMessageTriangle]="message.id==((i+1)%2+1) || message.id==-((i+1)%2+1)"></span>
+                {{message.messageString}}
+              <span class="time" [class.receivedTime]="message.id==i+1 || message.id==-(i+1)">{{message.time}}</span>
+              <i class="fa fa-check checkMark checkMarkBlue" aria-hidden="true" *ngIf="message.id==((i+1)%2+1) || message.id==-((i+1)%2+1)"></i>
+              <!-- <i class="fa fa-clock-o checkMark" aria-hidden="true" *ngIf="message.id==((i+1)%2+1) || message.id==-((i+1)%2+1)"></i> -->
+              <i class="fa fa-check checkMark checkMarkSecond checkMarkBlue" aria-hidden="true" *ngIf="message.id==((i+1)%2+1) || message.id==-((i+1)%2+1)"></i>
+            </div>
+          </div>
+        </div>         
+      </div>
+    </div>
+  </div>

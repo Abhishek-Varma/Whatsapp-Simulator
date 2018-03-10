@@ -1,21 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { HttpModule } from '@angular/http';
+
 
 import { AppComponent } from './app.component';
-import { MessageDataService } from './message-data.service'
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { BodyComponent } from './body/body.component';
+import { TopSectionComponent } from './body/top-section/top-section.component';
+import { ChatSectionComponent } from './body/chat-section/chat-section.component';
+import { BottomSectionComponent } from './body/bottom-section/bottom-section.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SidebarComponent,
+    BodyComponent,
+    TopSectionComponent,
+    ChatSectionComponent,
+    BottomSectionComponent
   ],
   imports: [
-    NgbModule.forRoot(),
-    BrowserModule,
-    HttpModule
+    BrowserModule
   ],
-  providers: [MessageDataService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
